@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Pais {
 private String nombre;
-Pais(String nom){
+public Pais(String nom){
 	this.nombre=nom;
 }
 public String getNombre() {

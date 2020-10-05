@@ -4,7 +4,7 @@ import java.util.*;
 public class Fabricante {
 String nombre;
 Pais pais;
-Fabricante(String nom,Pais pais){
+public Fabricante(String nom,Pais pais){
 	this.nombre=nom;
 	this.pais=pais;
 }

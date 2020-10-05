@@ -13,6 +13,19 @@ public void setNombre(String nombre) {
 	this.nombre = nombre;
 }
 public static Pais paisMasVendedor() {
+	Pais mayorpais = null;
+	int mayorveces = 0;
+	for(int i = 0; i < Vehiculo.Paises.size(); i++) {
+		Pais pais = Vehiculo.Paises.get(i);
+		int veces=Collections.frequency(Vehiculo.Paises, Vehiculo.Paises.get(i));
+		if(veces > mayorveces) {
+			mayorveces = veces;
+			mayorpais = pais;
+		}
+
+	}
+	return mayorpais;
+}
 	
 }
-}
+

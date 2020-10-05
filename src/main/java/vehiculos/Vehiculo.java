@@ -11,8 +11,8 @@ public class Vehiculo {
 	protected String traccion;
 	protected Fabricante fabricante;
 	protected static int cantidadVehiculos = 0;
-	public static Vector <Pais> Paises = new Vector<Pais>();
-	public static Vector <Fabricante> Fabricantes = new Vector<Fabricante>();
+	public static ArrayList <Pais> Paises = new ArrayList<Pais>();
+	public static ArrayList <Fabricante> Fabricantes = new ArrayList<Fabricante>();
 	public Vehiculo() {}
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
 		this.placa = placa;
@@ -86,5 +86,6 @@ public class Vehiculo {
     public String vehiculosPorTipo() {
     	return ("Automoviles: " + Automovil.getAutomoviles() + "\n" + "Camionetas: " + Camioneta.getCamionetas() + "\n" + "Camiones: " + Camion.getCamionetas());
     }
+    
 	}
 
